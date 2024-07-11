@@ -1,0 +1,27 @@
+<!-- item_activity.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- ImageView for Activity Image -->
+    <ImageView
+        android:id="@+id/ivActivityImage"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/kaamulan_park" />
+
+    <!-- TextView for Activity Name -->
+    <TextView
+        android:id="@+id/tvActivityName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:gravity="center" />
+
+</LinearLayout>

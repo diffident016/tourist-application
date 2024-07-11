@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:padding="16dp">
+
+    <!-- User Profile Icon -->
+    <ImageView
+        android:id="@+id/profileIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_person"
+        android:contentDescription="UserProfile"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginEnd="8dp" />
+
+    <!-- Search Bar -->
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:queryHint="Search Destinations..."
+        android:iconifiedByDefault="false"
+        android:layout_marginBottom="16dp"
+        android:layout_toEndOf="@id/profileIcon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true" />
+
+    <!-- RecyclerView for Activities -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/activityRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:scrollbars="vertical"
+        android:layout_below="@id/searchView" />
+
+</RelativeLayout>
